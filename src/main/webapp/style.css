@@ -1,0 +1,83 @@
+@charset "UTF-8";
+   body {
+    font-family: 'Roboto', sans-serif;
+    background: #233142; 
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 600px;
+    width: 90%;
+    background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    backdrop-filter: blur(10px);
+}
+
+h1, h2, h3 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type=file], input[type=text], textarea {
+    margin: 10px;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    width: 80%;
+    max-width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type=submit] {
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: auto;
+}
+
+input[type=submit]:hover {
+    background: linear-gradient(135deg, #5a0fb4, #1d65e0);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+input[type=file]:hover, input[type=text]:hover, textarea:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.message {
+    text-align: center;
+    margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+        border-radius: 0;
+    }
+}
